@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
-import Email from "@material-ui/icons/Email";
+import Email from "@material-ui/icons/Phone";
 import People from "@material-ui/icons/People";
 // core components
 import Header from "components/Header/Header.js";
@@ -86,7 +86,6 @@ export default function LoginPage(props) {
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
                       labelText="Name"

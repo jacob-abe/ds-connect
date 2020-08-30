@@ -26,6 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+      {/*}
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -48,7 +49,7 @@ export default function HeaderLinks(props) {
             </a>
           ]}
         />
-      </ListItem>
+        </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
@@ -58,7 +59,7 @@ export default function HeaderLinks(props) {
         >
           <CloudDownload className={classes.icons} /> Download
         </Button>
-      </ListItem>
+      </ListItem>*/}
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">

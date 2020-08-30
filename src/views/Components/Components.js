@@ -29,32 +29,38 @@ import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import SectionChooseType from "./Sections/SectionChooseType.js";
+import SectionStats from "./Sections/SectionStats.js";
 
 const useStyles = makeStyles(styles);
+const blackText= {
+  color:'black'
+}
 
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  
   return (
     <div>
       <Header
-        brand="DS-Connect"
+        brand="Home"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
+        color="black"
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "transparent"
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/doctor_banner.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>DS-Connect.</h1>
-                <h3 className={classes.subtitle}>
+                <h1 className={classes.title} style={blackText}>DS-Connect.</h1>
+                <h3 className={classes.subtitle} style={blackText}>
                   Connecting Doctors and Patients. Easy. Secure.
                 </h3>
               </div>
@@ -62,9 +68,11 @@ export default function Components(props) {
           </GridContainer>
         </div>
       </Parallax>
-
+      
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
+        <SectionChooseType/>
+        <SectionStats/>
+        {/*<SectionBasics />
         <SectionNavbars />
         <SectionTabs />
         <SectionPills />
@@ -73,16 +81,11 @@ export default function Components(props) {
         <SectionJavascript />
         <SectionCarousel />
         <SectionCompletedExamples />
-        <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
+        <SectionLogin />*/}
+        
+        {/*
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload />*/}
       </div>
       <Footer />
     </div>
