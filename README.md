@@ -1,6 +1,7 @@
 # Welcome to DS Connect
+
+## Doctors <--> Patients Easy. Secure.
 ## File Structure
-Within the download you'll find the following directories and files:
 
 ```
 material-kit-react

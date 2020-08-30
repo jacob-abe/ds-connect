@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="DS-Connect"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
