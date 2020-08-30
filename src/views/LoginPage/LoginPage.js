@@ -89,8 +89,8 @@ export default function LoginPage(props) {
                   <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
-                      labelText="First Name..."
-                      id="first"
+                      labelText="Name..."
+                      id="name"
                       formControlProps={{
                         fullWidth: true
                       }}
