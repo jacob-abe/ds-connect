@@ -89,7 +89,7 @@ export default function LoginPage(props) {
                   <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
-                      labelText="Name..."
+                      labelText="Name"
                       id="name"
                       formControlProps={{
                         fullWidth: true
@@ -104,13 +104,13 @@ export default function LoginPage(props) {
                       }}
                     />
                     <CustomInput
-                      labelText="Email..."
-                      id="email"
+                      labelText="Phone"
+                      id="tel"
                       formControlProps={{
                         fullWidth: true
                       }}
                       inputProps={{
-                        type: "email",
+                        type: "tel",
                         endAdornment: (
                           <InputAdornment position="end">
                             <Email className={classes.inputIconsColor} />
@@ -119,7 +119,7 @@ export default function LoginPage(props) {
                       }}
                     />
                     <CustomInput
-                      labelText="Password"
+                      labelText="OTP"
                       id="pass"
                       formControlProps={{
                         fullWidth: true
@@ -139,7 +139,7 @@ export default function LoginPage(props) {
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
                     <Button simple color="primary" size="lg">
-                      Get started
+                      Get OTP
                     </Button>
                   </CardFooter>
                 </form>
