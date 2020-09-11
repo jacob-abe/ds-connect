@@ -72,7 +72,7 @@ export default function Components(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionChooseType/>
         <SectionStats/>
-        {/*<SectionBasics />
+        <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
         <SectionPills />
@@ -81,7 +81,7 @@ export default function Components(props) {
         <SectionJavascript />
         <SectionCarousel />
         <SectionCompletedExamples />
-        <SectionLogin />*/}
+        <SectionLogin />
         
         {/*
         <SectionExamples />
